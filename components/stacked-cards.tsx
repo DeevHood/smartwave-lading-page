@@ -10,7 +10,7 @@ interface CardProps {
 
 export const StackedCard = ({ name, message, avatarSrc, index }: CardProps) => (
   <Card
-    className="absolute w-full border-[#FFB8A6] bg-[#FFB8A6] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg text-white min-h-20"
+    className="absolute min-h-20 w-full border-[#FFB8A6] bg-[#FFB8A6] text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
     style={{
       transform: `translateY(${index * 18}px)`,
       zIndex: 10 - index,
