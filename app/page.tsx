@@ -213,19 +213,11 @@ export default function LandingPage() {
       </div>
 
       {/* Second Content */}
-      <div className="px-20">
+      <div className="mb-40 px-20">
         <div className="mb-32 text-5xl font-extralight">
           <h2><span className="font-normal">Discover</span> The Future Of Airpods</h2> 
           <h2>And Sound <span className="font-normal">With</span> <span className="font-bold">SmartWave.</span>
             <div className="mx-2 inline-flex -space-x-4">
-              <Avatar className="relative z-10">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <Avatar className="relative z-20">
-                <AvatarImage src="https://github.com/user1.png" />
-                <AvatarFallback>U1</AvatarFallback>
-              </Avatar>
             </div>
           </h2>
         </div>
@@ -300,6 +292,34 @@ export default function LandingPage() {
               </h3>
             </CardContent>
           </Card>
+        </div>
+      </div>
+
+      <div className="mb-32 px-20">
+        <div className="flex">
+          <div className="flex w-1/3">
+            <Card>
+              <CardContent>
+                Connect
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent>
+                Balanced
+              </CardContent>
+            </Card>
+          </div>
+          <div className="w-2/3 text-4xl font-extralight">
+            <h2 className="font-bold">Precision Meet Comfort Comfor</h2> 
+            <h2>For unmatched Performance</h2>
+            <p className="text-base">
+              Elevate your productivity with ergonomic design, engineered to support multi-use and minimize noise.
+            </p>
+          </div>
+        </div>
+        <div className="flex">
+          <div></div>
+          <div></div>
         </div>
       </div>
     </main>
