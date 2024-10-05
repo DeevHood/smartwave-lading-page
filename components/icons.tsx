@@ -23,8 +23,8 @@ export const CurvedBorder = ({ className = 'rotate-90'}: CurvedBorderProps) => {
 export const OrangeSmilingFace = () => {
   return (
     <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M34.1662 8.8693C41.2791 15.9822 41.1537 27.5922 33.8079 34.5618C27.0175 40.9939 15.9987 40.9939 9.19037 34.5618C1.82662 27.5922 1.7012 15.9822 8.83203 8.8693C15.8195 1.86388 27.1787 1.86388 34.1662 8.8693Z" stroke="#D94941" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M28.3808 28.793C24.5824 32.3763 18.4191 32.3763 14.6387 28.793" stroke="#D94941" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M34.1662 8.8693C41.2791 15.9822 41.1537 27.5922 33.8079 34.5618C27.0175 40.9939 15.9987 40.9939 9.19037 34.5618C1.82662 27.5922 1.7012 15.9822 8.83203 8.8693C15.8195 1.86388 27.1787 1.86388 34.1662 8.8693Z" stroke="#D94941" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M28.3808 28.793C24.5824 32.3763 18.4191 32.3763 14.6387 28.793" stroke="#D94941" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }

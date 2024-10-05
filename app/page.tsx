@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import AirPodHero from "@/public/air-pods-hero.png"
-import { Airpods, ArrowCircleDown, Facebook, Headphone, Instagram, ScanBarcode } from "iconsax-react";
+import { Airpods, ArrowCircleDown, Bluetooth2, Car, Facebook, Flash, Headphone, Instagram, ScanBarcode } from "iconsax-react";
 import BlueProduct from "@/public/blue-product.png"
 import GrayProduct from "@/public/gray-product.png"
 import GreenProduct from "@/public/green-product.png"
@@ -21,7 +21,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { CurvedBorder, DotsFlash, DotsMusic, OrangeSmilingFace } from "@/components/icons";
 import { StackedCard } from "@/components/stacked-cards";
 import Sidebar from "@/components/ui/side-bar";
-
+import HeadphoneSwipper from "@/components/compare-headphones";
+import FirstCompareHeadphones from "@/public/first-compare-headphones.png";
+import FeatureHeadphones from "@/components/features-headphones";
+import TestimonialScroll from "@/components/testimonial-scroll";
+import ShufflMultipleHeadphones from "@/public/shuffle-multi-headphones.png"
+import shufflAirPods from "@/public/shuffle-airpods.png"
+import shufflPhone from "@/public/shuffle-phone.png"
+import shufflWhiteHeadphone from "@/public/shuffle-white-headphone.png"
+import shufflOrangeBgMen from "@/public/shuffle-orange-bg-men.png"
+import grayHalfHeadphons from "@/public/grey-half-headphones.png"
+import bgGradientFooterOne from "@/public/bg-gradient-1-footer.png"
+import whiteAllHeadphones from "@/public/white-all-headphones.png"
+ 
 const cards = [
   { name: "Jane Doe", message: "Using smartwave took my music playlist to another level", avatarSrc: "/placeholder.svg?height=40&width=40" },
   { name: "Jane Doe", message: "Just discovered an amazing new artist!", avatarSrc: "/placeholder.svg?height=40&width=40" },
@@ -48,10 +60,12 @@ export default function LandingPage() {
             <div className="flex flex-col justify-center">
               <h1 className="text-xl font-bold">
                 With Smartwave Pro
-                Elevate Your <span className="text-[#FF8366]">Music</span> 
+                Elevate Your 
+                <br></br>
+                <span className="text-[#FF8366]">Music</span> 
                 <span className="inline-flex">
                   <svg width="53" height="16" viewBox="0 0 53 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 6.9226C23 25.9231 33.5695 -8.02305 51 6.9226" stroke="#FF8366" stroke-width="6"/>
+                    <path d="M3 6.9226C23 25.9231 33.5695 -8.02305 51 6.9226" stroke="#FF8366" strokeWidth="6"/>
                   </svg>
                 </span>
               </h1>
@@ -59,7 +73,7 @@ export default function LandingPage() {
               <h1 className="text-xl font-bold">
                 <span className="inline-flex">
                   <svg  className="mt-2" width="53" height="16" viewBox="0 0 53 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 6.9226C23 25.9231 33.5695 -8.02305 51 6.9226" stroke="#FF8366" stroke-width="6"/>
+                    <path d="M3 6.9226C23 25.9231 33.5695 -8.02305 51 6.9226" stroke="#FF8366" strokeWidth="6"/>
                   </svg>
                 </span>
                 And Get <span className="text-[#FF8366]">Seamless</span> Sound Experience
@@ -91,13 +105,13 @@ export default function LandingPage() {
                     <g mask="url(#mask0_50_245)">
                     <path d="M28.75 1H10.25C5.14137 1 1 5.14137 1 10.25V28.75C1 33.8586 5.14137 38 10.25 38H28.75C33.8586 38 38 33.8586 38 28.75V10.25C38 5.14137 33.8586 1 28.75 1Z" fill="#1F242F"/>
                     <path d="M1 1H38V38H1V1Z" fill="#FF8567"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.625 19.5C14.4442 19.5 19.5 14.4442 19.5 5.625C19.5 14.4442 24.5558 19.5 33.375 19.5C24.5558 19.5 19.5 24.5558 19.5 33.375C19.5 24.5558 14.4442 19.5 5.625 19.5Z" fill="white"/>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M5.625 19.5C14.4442 19.5 19.5 14.4442 19.5 5.625C19.5 14.4442 24.5558 19.5 33.375 19.5C24.5558 19.5 19.5 24.5558 19.5 33.375C19.5 24.5558 14.4442 19.5 5.625 19.5Z" fill="white"/>
                     </g>
-                    <path d="M28.75 1.77087H10.25C5.56713 1.77087 1.77087 5.56713 1.77087 10.25V28.75C1.77087 33.433 5.56713 37.2292 10.25 37.2292H28.75C33.433 37.2292 37.2292 33.433 37.2292 28.75V10.25C37.2292 5.56713 33.433 1.77087 28.75 1.77087Z" stroke="url(#paint0_linear_50_245)" stroke-width="2"/>
+                    <path d="M28.75 1.77087H10.25C5.56713 1.77087 1.77087 5.56713 1.77087 10.25V28.75C1.77087 33.433 5.56713 37.2292 10.25 37.2292H28.75C33.433 37.2292 37.2292 33.433 37.2292 28.75V10.25C37.2292 5.56713 33.433 1.77087 28.75 1.77087Z" stroke="url(#paint0_linear_50_245)" strokeWidth="2"/>
                     <defs>
                     <linearGradient id="paint0_linear_50_245" x1="19.5" y1="1.00004" x2="19.5" y2="38" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white" stop-opacity="0.12"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    <stop stopColor="white" stopOpacity="0.12"/>
+                    <stop offset="1" stopColor="white" stopOpacity="0"/>
                     </linearGradient>
                     </defs>
                   </svg>
@@ -214,10 +228,18 @@ export default function LandingPage() {
 
       {/* Second Content */}
       <div className="mb-40 px-20">
-        <div className="mb-32 text-5xl font-extralight">
+        <div className="mb-40 text-5xl font-extralight">
           <h2><span className="font-normal">Discover</span> The Future Of Airpods</h2> 
           <h2>And Sound <span className="font-normal">With</span> <span className="font-bold">SmartWave.</span>
             <div className="mx-2 inline-flex -space-x-4">
+              <Avatar className="relative z-10">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <Avatar className="relative z-20">
+                <AvatarImage src="https://github.com/user1.png" />
+                <AvatarFallback>U1</AvatarFallback>
+              </Avatar>
             </div>
           </h2>
         </div>
@@ -281,8 +303,8 @@ export default function LandingPage() {
               </CardContent>
             </Card>
 
-            <Button variant="outline" className="flex-around flex h-12 w-full justify-around rounded-full border-2 border-red-500 p-4 text-xl text-red-500 hover:bg-red-50">
-              Boost Now <span className="ml-2"><OrangeSmilingFace /></span>
+            <Button variant="outline" className="flex-around flex h-12 w-full justify-around rounded-full border-2 border-red-500 p-4 text-lg text-red-500 hover:bg-red-50">
+              Boost Now <OrangeSmilingFace />
             </Button>
           </div>
           <Card className="overflow-hidden rounded-3xl bg-[#F5F5F7]">
@@ -294,35 +316,207 @@ export default function LandingPage() {
           </Card>
         </div>
       </div>
-
-      <div className="mb-32 px-20">
-        <div className="flex">
-          <div className="flex w-1/3">
-            <Card>
-              <CardContent>
-                Connect
+      
+      {/* Third Content */}
+      <div className="mb-40 px-20">
+        <div className="mb-40 flex">
+          <div className="flex w-1/2 gap-4">
+            <Card className="border-gray rounded-2xl">
+              <CardContent  className="color-gray flex h-full flex-col items-center justify-around pt-4 text-base">
+                <span className="text-gray-400">CONNECT</span>
+                <Bluetooth2 className="text-gray" />
               </CardContent>
             </Card>
-            <Card>
-              <CardContent>
-                Balanced
+            <Card  className="border-gray rounded-2xl">
+              <CardContent className="flex h-full flex-col items-center justify-around pt-4 text-base">
+                <span className="text-gray-400">BALANCED</span>
+                <Headphone />
               </CardContent>
             </Card>
           </div>
-          <div className="w-2/3 text-4xl font-extralight">
-            <h2 className="font-bold">Precision Meet Comfort Comfor</h2> 
+          <div className="w-1/2 text-4xl font-extralight">
+            <h2 className="font-bold">Precision Meet Comfort</h2> 
             <h2>For unmatched Performance</h2>
             <p className="text-base">
               Elevate your productivity with ergonomic design, engineered to support multi-use and minimize noise.
             </p>
           </div>
         </div>
-        <div className="flex">
-          <div></div>
-          <div></div>
+        <div className="flex items-center gap-12">
+          <div className="flex w-1/2">
+             <HeadphoneSwipper />
+          </div>
+          <div className="flex w-1/2 items-center gap-8">
+            <div className="relative size-60 w-1/2 rounded-full bg-[#FFCABA]">
+              <Image src={FirstCompareHeadphones} alt="first headphone" className="absolute bottom-1/4"/> 
+            </div>
+            <div className="w-1/2">
+              <FeatureHeadphones />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Fourth Content */}
+      <div className="mb-40">
+        <div className="mb-40 flex px-20">
+          <div className="w-1/2 text-4xl font-extralight">
+            <h2 className="font-bold">Precision Meet Comfort</h2> 
+            <h2>For unmatched Performance</h2>
+           </div>
+          <p className="w-1/2 text-base">
+            Elevate your productivity with ergonomic design, engineered to support multi-use and minimize noise.
+          </p>
+        </div>
+        <TestimonialScroll />
+      </div>
+       
+
+      {/* Fifth Content */}
+      <div className="relative mb-40 px-3">
+        <div className="mb-32 w-full overflow-hidden whitespace-nowrap">
+          <div className="inline-block w-full animate-marquee">
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+            <span className="mx-4 text-8xl font-bold text-[#FF502B]">PERFORMANCE / </span>
+            <span className="mx-4 text-8xl font-bold">BATTERY / </span>
+            <span className="text-stroke mx-4 text-8xl font-bold">QUALITY / </span>
+          </div>
+        </div>
+        <div className="relative grid grid-cols-3 grid-rows-2 gap-4">
+              <div className="col-span-1 row-span-2">
+                <Card className="relative size-full rounded-3xl border-none bg-[#FF8365] bg-opacity-25">
+                  <div className="absolute right-2 top-2 text-xl font-bold text-[#FF8365]">
+                    01
+                  </div>
+                  <CardContent className="p-6">
+                    <Image src={ShufflMultipleHeadphones} alt="" className="mb-4"/>
+                    <p className="mx-4 text-2xl text-[#FF8365]">HEADSET</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="col-span-1 row-span-1 pl-14">
+                <Card className="relative size-full rounded-3xl border-none bg-[#FF8365] bg-opacity-25">
+                  <div className="absolute right-2 top-2 text-xl font-bold text-[#FF8365]">
+                    03
+                  </div>
+                  <CardContent className="p-6">
+                    <Image src={shufflAirPods} alt="" className="mb-4"/>
+                    <p className="mx-4 w-full text-center text-2xl text-[#FF8365]">HEADPHONE</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="col-span-1 row-span-2">
+                <Card className="relative size-full rounded-3xl border-none bg-[#FF8365] bg-opacity-25 pb-0">
+                  <div className="absolute right-2 top-2 text-xl font-bold text-[#FF8365]">
+                    04
+                  </div>
+                  <CardContent className="flex h-full p-6 pb-0">
+                    <p className="mt-12 w-1/2 text-xl font-medium text-[#FF8365]">Use AR to see AirPods Max.</p>
+                    <div className="flex h-full flex-col flex-wrap justify-end">
+                      <Image src={shufflPhone} alt=""/>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+        </div>
+        <div className="absolute bottom-0 z-10 flex w-full content-end justify-center gap-8">
+          <Card className="absolute bottom-[15em] right-[60%] z-20 aspect-square w-72 -rotate-12 overflow-hidden rounded-3xl bg-gradient-to-br from-red-500 to-red-600 px-4 py-2 text-center text-white shadow-lg">
+            <CardContent className="flex h-full flex-col justify-between p-0">
+              <div>
+                <h2 className="mb-2 text-xl font-normal">A Battery That Keeps Staying Alive.</h2>
+                <p className="mb-2 text-8xl font-bold">20<span className="text-4xl">Hr</span></p>
+              </div>
+              <p className="text-wrap text-xs">
+                Hours Of Listening, Movie Watching, Or Talk Time — With Active Noise Cancellation And Spatial Audio Enabled.5 Simply Charge Via Lightning Connector. A Quick 5-Minute Charge Delivers 1.5 Hours Of Listening.6
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="mt-8 h-fit rotate-12 rounded-3xl border-none text-center shadow-2xl shadow-[#ffece9]">
+            <CardContent className="px-12 py-6">
+              <p className="mb-4 text-5xl font-semibold text-[#FB3A20]">5.2</p>
+              <p className="text-2xl font-medium">Bluetooth</p>
+            </CardContent>
+          </Card>
+          <Card className="h-fit -rotate-12 border-none bg-transparent shadow-none">
+            <CardContent className="bg-transparent">
+              <Image src={shufflWhiteHeadphone} alt="" />
+            </CardContent>
+          </Card>
+          <Card className="h-fit rotate-12 rounded-3xl border-none px-8 py-4 text-center">
+            <CardHeader className="mb-2 p-0 text-2xl font-medium">
+              SmartWave
+            </CardHeader>
+            <CardContent className="mb-2 p-0">
+              <Image src={shufflOrangeBgMen} alt="" />
+            </CardContent>
+            <CardFooter className="p-0">
+                <Button className="w-full rounded-full bg-gray-100 p-2 text-black">Buy now</Button>
+            </CardFooter>
+          </Card>
+          <Card className="h-fit -rotate-12 rounded-3xl border-none">
+            <CardContent className="flex flex-col items-center gap-6 px-12 py-5">
+              <span className="w-fit rounded-full bg-[#FFEBE9] p-1">
+                <Flash
+                  color="#FF8A65"
+                />
+              </span>
+              <span className="text-2xl font-medium">Fast charge</span>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* Sixth Content */}
+      <div className="relative mx-6 mb-40 flex bg-white">
+        <Card className="z-20 mx-auto my-8 w-full max-w-md rounded-3xl bg-white shadow-lg">
+          <CardContent className="flex flex-col items-center p-8 text-center">
+            <span className="mb-6 rounded-full bg-red-100 px-3 py-1 text-xs font-semibold text-[#FF8667]">
+              offer
+            </span>
+            <h2 className="mb-2 text-3xl font-bold">
+              Buy <span className="text-[#FF8667]">SMARTWAVE</span>
+            </h2>
+            <h3 className="mb-4 text-3xl font-bold">
+              And Say It In A Way Only You Can.
+            </h3>
+            <p className="mb-8 text-gray-500">
+              Discover The Engraving Options For AirPods.
+              <br />
+              Mix Emoji, Text, And Numbers.
+            </p>
+            <Button className="rounded-full bg-[#FF8667] px-8 py-3 text-lg font-semibold text-white hover:bg-red-500">
+              Buy Smartwave
+            </Button>
+          </CardContent>
+        </Card>
+        <Image className={"z-20"}src={grayHalfHeadphons} alt="" />
+        <Image className={"absolute z-10 size-full"}src={bgGradientFooterOne} alt="" />
+      </div>
+      
+      {/* Seventh Content */}
+      <div className="relative">
+        <Image className="absolute inset-0 mx-auto h-full w-auto" src={whiteAllHeadphones} alt="" />
+        <div className="mx-6 min-h-96 rounded-b-3xl bg-gradient-to-t from-[#FF8567] to-white">
+      
+        </div>
+        <div className="mx-6 min-h-20 bg-white">
+
         </div>
       </div>
     </main>
-
   );
 }
